@@ -1,15 +1,18 @@
 <div align="center" style="text-align: center;">
-  <h1 style="border-bottom: none;">really-code-configurator</h1>
+  <h1 style="border-bottom: none;">@really/really-code-configurator</h1>
 
   <p>Configure and generate code snippet for custom element</p>
 </div>
 
 <hr />
 
-<!-- [![Follow me][follow-me-badge]][follow-me-url] -->
+<a href="https://www.buymeacoffee.com/RLmMhgXFb" target="_blank" rel="noopener noreferrer"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 20px !important;width: auto !important;" ></a>
+[![tippin.me][tippin-me-badge]][tippin-me-url]
+[![Follow me][follow-me-badge]][follow-me-url]
 
 [![Version][version-badge]][version-url]
-[![Built with lit-element][built-with-lit-element-badge]][built-with-lit-element-url]
+[![lit-element][lit-element-version-badge]][lit-element-url]
+[![Node version][node-version-badge]][node-version-url]
 [![MIT License][mit-license-badge]][mit-license-url]
 
 [![Downloads][downloads-badge]][downloads-url]
@@ -17,10 +20,8 @@
 [![Packagephobia][packagephobia-badge]][packagephobia-url]
 [![Bundlephobia][bundlephobia-badge]][bundlephobia-url]
 
-[![Build Status][travis-badge]][travis-url]
+[![CircleCI][circleci-badge]][circleci-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
-<!-- [![codecov][codecov-badge]][codecov-url] -->
-<!-- [![Coverage Status][coveralls-badge]][coveralls-url] -->
 
 [![codebeat badge][codebeat-badge]][codebeat-url]
 [![Codacy Badge][codacy-badge]][codacy-url]
@@ -33,8 +34,9 @@
 - [Pre-requisites](#pre-requisites)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [HTML (with native ES modules)](#html-with-native-es-modules)
-  - [JS/ TS file (w/ native ES modules)](#js-ts-file-w-native-es-modules)
+- [Browser compatibility](#browser-compatibility)
+- [API references](#api-references)
+- [Demo](#demo)
 - [License](#license)
 
 ## Pre-requisites
@@ -49,55 +51,116 @@
 
 ```sh
 # Install via NPM
-$ npm install really-code-configurator
+$ npm install @really/really-code-configurator
 ```
 
 ## Usage
 
-### HTML (with native ES modules)
+**properties.config.ts**
+
+```ts
+import { PropertyValue } from '../really-code-configurator';
+
+const properties: PropertyValue[] = [
+  {
+    name: 'propertyString',
+    value: 'property',
+    type: 'string',
+  },
+  {
+    name: 'propertyNumber',
+    value: 0,
+    type: 'number',
+  },
+  {
+    name: 'propertyBoolean',
+    value: true,
+    type: 'boolean',
+  },
+  {
+    name: 'propertyWithSelectableOptions',
+    value: 'option-1',
+    type: 'string',
+    options: [
+      {
+        label: 'option-1',
+        value: 'option-1',
+      },
+      {
+        label: 'option-2',
+        value: 'option-2',
+      },
+      {
+        label: 'option-3',
+        value: 'option-3',
+      },
+    ],
+  },
+];
+
+const cssProperties: PropertyValue[] = [
+  {
+    name: '--test-property-width',
+    value: '2px',
+  }
+];
+
+export { properties, cssProperties };
+```
+
+**index.html**
 
 ```html
-<!-- For the sake of brevity, the HTML below is just for reference -->
-<!doctype html>
 <html>
   <head>
-    <!-- Native ES modules -->
-    <script type="module" src="/path/to/my-element.js"></script>
+    <script type="module">
+      import '/path/to/test-property.js';
+      import '/path/to/@really/really-code-configurator.js';
+      import { properties, cssProperties } from '/path/to/properties.config.js';
+
+      const configuratorEl = document.createElement('.configurator');
+
+      /** Load `properties` and `cssProperties` */
+      if (configuratorEl) {
+        configuratorEl.properties = properties;
+        configuratorEl.cssProperties = cssProperties;
+      }
+    </script>
   </head>
 
   <body>
-    <!-- Element declaration -->
-    <my-element></my-element>
+    <really-code-configurator class="configurator" customelement="test-property">
+      <test-property></test-property>
+    </really-code-configurator>
   </body>
 </html>
 ```
 
-### JS/ TS file (w/ native ES modules)
+## Browser compatibility
 
-```ts
-import { css, html, LitElement } from 'lit-element';
-import 'really-code-configurator.js';
+`really-code-configurator` works in all major browsers (Chrome, Firefox, IE, Edge, Safari, and Opera).
 
-class MainApp extends LitElement {
-  public static styles = [
-    css`
-    :host {
-      display: block;
-    }
+[Heavily tested](/.circleci/config.yml) on the following browsers:
 
-    * {
-      box-sizing: border-box;
-    }
-    `,
-  ];
+| Name | OS |
+| --- | --- |
+| Internet Explorer 11 | Windows 7 |
+| Edge 13 | Windows 10 |
+| Edge 17 | Windows 10 |
+| Safari 9 | Mac OS X 10.11 |
+| Safari 10.1 | Mac OS 10.12 |
+| Chrome 41 ([WRE][wre-url]) | Linux |
+| Chrome 69 ([WRE 2019][wre-2019-url]) | Windows 10 |
+| Firefox 62 (w/o native Shadow DOM) | macOS Mojave (10.14) |
+| Firefox 63 (native Shadow DOM support) | Windows 10 |
 
-  protected render() {
-    return html`
-    <my-element></my-element>
-    `;
-  }
-}
-```
+## API references
+
+- [ReallyCodeConfigurator][]
+
+## Demo
+
+_Coming soon_
 
 ## License
 
@@ -108,10 +171,12 @@ class MainApp extends LitElement {
 [java-url]: https://www.java.com/en/download
 [nodejs-url]: https://nodejs.org
 [npm-url]: https://www.npmjs.com
+[lit-element-url]: https://github.com/Polymer/lit-element?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/app-datepicker
 [node-releases-url]: https://nodejs.org/en/download/releases
 [vscode-url]: https://code.visualstudio.com
 [vscode-lit-html-url]: https://github.com/mjbvz/vscode-lit-html
 [web-component-tester-url]: https://github.com/Polymer/tools/tree/master/packages/web-component-tester
+[ReallyCodeConfigurator]: #really-code-configurator
 
 <!-- MDN -->
 [array-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -126,46 +191,41 @@ class MainApp extends LitElement {
 [string-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 <!-- Badges -->
-<!-- [follow-me-badge]: https://flat.badgen.net/twitter/follow/Rong Sen Ng (motss)?icon=twitter -->
+[tippin-me-badge]: https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@igarshmyb/F0918E
+[follow-me-badge]: https://flat.badgen.net/twitter/follow/igarshmyb?icon=twitter
 
+[version-badge]: https://flat.badgen.net/npm/v/@really/really-code-configurator/next?icon=npm
+[lit-element-version-badge]: https://flat.badgen.net/npm/v/lit-element/latest?icon=npm&label=lit-element
+[node-version-badge]: https://flat.badgen.net/npm/node/@really/really-code-configurator
+[mit-license-badge]: https://flat.badgen.net/npm/license/@really/really-code-configurator
 
+[downloads-badge]: https://flat.badgen.net/npm/dm/@really/really-code-configurator
+[total-downloads-badge]: https://flat.badgen.net/npm/dt/@really/really-code-configurator?label=total%20downloads
+[packagephobia-badge]: https://flat.badgen.net/packagephobia/install/@really/really-code-configurator
+[bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/@really/really-code-configurator
 
-[version-badge]: https://flat.badgen.net/npm/v/really-code-configurator?icon=npm
-[built-with-lit-element-badge]: https://flat.badgen.net/npm/v/lit-element/latest?icon=npm&label=lit-element
-[mit-license-badge]: https://flat.badgen.net/npm/license/really-code-configurator
-
-[downloads-badge]: https://flat.badgen.net/npm/dm/really-code-configurator
-[total-downloads-badge]: https://flat.badgen.net/npm/dt/really-code-configurator?label=total%20downloads
-[packagephobia-badge]: https://flat.badgen.net/packagephobia/install/really-code-configurator
-[bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/really-code-configurator
-
-[travis-badge]: https://flat.badgen.net/travis/motss/really-code-configurator?icon=travis
-<!-- [circleci-badge]: https://flat.badgen.net/circleci/github/motss/really-code-configurator?icon=circleci -->
-[daviddm-badge]: https://flat.badgen.net/david/dep/motss/really-code-configurator
-<!-- [codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/really-code-configurator?label=codecov&icon=codecov -->
-<!-- [coveralls-badge]: https://flat.badgen.net/coveralls/c/github/motss/really-code-configurator?label=coveralls -->
+[circleci-badge]: https://flat.badgen.net/circleci/github/@really/really-code-configurator?icon=circleci
+[daviddm-badge]: https://flat.badgen.net/david/dep/@really/really-code-configurator
 
 [codebeat-badge]: https://codebeat.co/badges/123
 [codacy-badge]: https://api.codacy.com/project/badge/Grade/123
 [coc-badge]: https://flat.badgen.net/badge/code%20of/conduct/pink
 
 <!-- Links -->
-<!-- [follow-me-url]: https://twitter.com/Rong Sen Ng (motss)?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=really-code-configurator -->
+[tippin-me-url]: https://tippin.me/@igarshmyb
+[follow-me-url]: https://twitter.com/igarshmyb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
 
-[version-url]: https://www.npmjs.com/package/really-code-configurator
-[built-with-lit-element-url]: https://github.com/Polymer/lit-element
-[mit-license-url]: https://github.com/motss/really-code-configurator/blob/master/LICENSE
+[version-url]: https://www.npmjs.com/package/@really/really-code-configurator/v/next?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
+[node-version-url]: https://nodejs.org/en/download?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
+[mit-license-url]: https://github.com/@really/really-code-configurator/blob/master/LICENSE?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
 
 [downloads-url]: https://www.npmtrends.com/really-code-configurator
 [packagephobia-url]: https://packagephobia.now.sh/result?p=really-code-configurator
 [bundlephobia-url]: https://bundlephobia.com/result?p=really-code-configurator
 
-[travis-url]: https://travis-ci.org/motss/really-code-configurator
-<!-- [circleci-url]: https://circleci.com/gh/motss/really-code-configurator/tree/master -->
-[daviddm-url]: https://david-dm.org/motss/really-code-configurator
-<!-- [codecov-url]: https://codecov.io/gh/motss/really-code-configurator -->
-<!-- [coveralls-url]: https://coveralls.io/github/motss/really-code-configurator?branch=master -->
+[circleci-url]: https://circleci.com/gh/@really/really-code-configurator/tree/master?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
+[daviddm-url]: https://david-dm.org/@really/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
 
-[codebeat-url]: https://codebeat.co/projects/github-com-motss-really-code-configurator-master
-[codacy-url]: https://www.codacy.com/app/motss/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/really-code-configurator&amp;utm_campaign=Badge_Grade
-[coc-url]: https://github.com/motss/really-code-configurator/blob/master/CODE_OF_CONDUCT.md
+[codebeat-url]: https://codebeat.co/projects/github-com-really-code-configurator-master
+[codacy-url]: https://www.codacy.com/app/@really/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator&amp;utm_campaign=Badge_Grade
+[coc-url]: https://github.com/@really/really-code-configurator/blob/master/CODE_OF_CONDUCT.md
