@@ -4,13 +4,13 @@
   "plugins": {
     "local": {
       "browsers": [
-        "chrome"
+        "chrome",
+        "firefox"
       ],
       "browserOptions": {
         "chrome": [
-          "disable-gpu",
           "headless",
-          "window-size=1920,1080"
+          "disable-gpu"
         ],
         "firefox": [
           "-headless"
@@ -18,9 +18,9 @@
       }
     }
   },
-  "suites": [ "src/test" ],
+  "suites": ["src/test"],
   "verbose": false,
   "expanded": true,
   "compile": "auto",
-  "testTimeout": "599999"
+  "testTimeout": "539999"
 }

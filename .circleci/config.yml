@@ -51,7 +51,7 @@ jobs:
           at: ~/really-code-configurator
       - run:
           name: Test
-          command: npx -p polymer-cli -- npm run test:ci
+          command: npx -p web-component-tester -- npm run test:ci
 
   test_ie_11:
     <<: *defaults
@@ -62,7 +62,7 @@ jobs:
           name: Test (Internet Explorer 11)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'windows 7/internet explorer@11';
+              npx -p web-component-tester -- npm run test:sl -- -s 'windows 7/internet explorer@11';
             fi
 
   test_edge_17:
@@ -74,7 +74,7 @@ jobs:
           name: Test (Edge 17)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'windows 10/microsoftedge@17';
+              npx -p web-component-tester -- npm run test:sl -- -s 'windows 10/microsoftedge@17';
             fi
 
   test_edge_13:
@@ -86,7 +86,7 @@ jobs:
           name: Test (Edge 13)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'windows 10/microsoftedge@13';
+              npx -p web-component-tester -- npm run test:sl -- -s 'windows 10/microsoftedge@13';
             fi
 
   test_safari_10_1:
@@ -98,7 +98,7 @@ jobs:
           name: Test (Safari 10.1)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'macos 10.12/safari@10.1';
+              npx -p web-component-tester -- npm run test:sl -- -s 'macos 10.12/safari@10.1';
             fi
 
   test_safari_9:
@@ -110,7 +110,7 @@ jobs:
           name: Test (Safari 9)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'os x 10.11/safari@9';
+              npx -p web-component-tester -- npm run test:sl -- -s 'os x 10.11/safari@9';
             fi
 
   test_chrome_69:
@@ -122,7 +122,7 @@ jobs:
           name: Test (Chrome 69)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'windows 10/chrome@69';
+              npx -p web-component-tester -- npm run test:sl -- -s 'windows 10/chrome@69';
             fi
 
   test_chrome_41:
@@ -134,7 +134,7 @@ jobs:
           name: Test (Chrome 41)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'Linux/chrome@41';
+              npx -p web-component-tester -- npm run test:sl -- -s 'Linux/chrome@41';
             fi
 
   test_firefox_63:
@@ -146,7 +146,7 @@ jobs:
           name: Test (Firefox 63)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'windows 10/firefox@63';
+              npx -p web-component-tester -- npm run test:sl -- -s 'windows 10/firefox@63';
             fi
 
   test_firefox_62:
@@ -158,7 +158,7 @@ jobs:
           name: Test (Firefox 62)
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST}" ]; then
-              npx -p polymer-cli -- npm run test:sl -- -s 'macos 10.14/firefox@62';
+              npx -p web-component-tester -- npm run test:sl -- -s 'macos 10.14/firefox@62';
             fi
 
 workflows:

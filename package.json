@@ -4,10 +4,10 @@
   "private": true,
   "description": "Configure and generate code snippet for custom element",
   "keywords": [
-    "really-code-configurator",
     "lit-element",
     "lit-html",
     "polymer",
+    "really-code-configurator",
     "typescript",
     "web-components"
   ],
@@ -36,9 +36,11 @@
     "prepublishOnly": "rm -rf dist/ && rollup -c ./rollup.config.js",
     "rollup": "rollup -c ./rollup.config.js",
     "test": "npm run lint && npm run build && wct",
+    "test:ci": "wct --config-file ./wct.config.ci.json",
+    "test:sl": "wct --config-file ./wct.config.sl.json",
     "ts": "tsc -p ./tsconfig.json",
-    "wct": "wct --skip-selenium-install --config-file ./wct.conf.json",
-    "watch": "npm run ts -- --watch"
+    "watch": "npm run ts -- --watch",
+    "wct": "wct --skip-selenium-install --config-file ./wct.config.json"
   },
   "dependencies": {
     "@material/mwc-button": "^0.5.0",
