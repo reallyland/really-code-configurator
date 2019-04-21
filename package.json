@@ -26,24 +26,26 @@
     "url": "https://github.com/motss"
   },
   "files": [
-    "dist"
+    "dist/*.d.ts.map",
+    "dist/*.d.ts",
+    "dist/*.js.map",
+    "dist/*.js"
   ],
-  "main": "./dist/my-element.js",
-  "module": "./dist/my-element.js",
-  "typings": "./dist/my-element.d.ts",
+  "main": "./dist/really-code-configurator.js",
+  "module": "./dist/really-code-configurator.js",
+  "typings": "./dist/really-code-configurator.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.test.json",
-    "clean": "rm -rf ./*.*js ./*.d.ts dist/",
+    "build": "npm run ts -- -p tsconfig.prod.json",
+    "clean": "rm -rf dist/",
     "lint": "tslint --project tsconfig.json --config tslint.prod.json --format stylish",
     "lint:debug": "tslint --project tsconfig.json --config tslint.json --format stylish",
-    "prepublishOnly": "rm -rf dist/ && rollup -c ./rollup.config.js",
-    "rollup": "rollup -c ./rollup.config.js",
-    "test": "npm run lint && npm run build && wct",
-    "test:ci": "wct --config-file ./wct.config.ci.json",
-    "test:sl": "wct --config-file ./wct.config.sl.json",
-    "ts": "tsc -p ./tsconfig.json",
+    "prepublishOnly": "rm -rf dist/ && npm run build",
+    "test": "npm run ts && wct --skip-selenium-install --config-file wct.config.json",
+    "test:ci": "npm run wct -- --config-file wct.config.ci.json",
+    "test:sl": "npm run wct -- --config-file wct.config.sl.json",
+    "ts": "tsc",
     "watch": "npm run ts -- --watch",
-    "wct": "wct --skip-selenium-install --config-file ./wct.config.json"
+    "wct": "npm run lint && npm run clean && npm run ts && wct"
   },
   "dependencies": {
     "@material/mwc-button": "^0.5.0",
