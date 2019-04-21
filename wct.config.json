@@ -20,6 +20,5 @@
   "suites": ["src/test"],
   "verbose": true,
   "expanded": true,
-  "compile": "auto",
-  "testTimeout": "539999"
+  "compile": "auto"
 }
