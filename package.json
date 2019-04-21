@@ -1,12 +1,15 @@
 {
-  "name": "really-code-configurator",
+  "name": "@really/really-code-configurator",
   "version": "0.0.0",
-  "private": true,
   "description": "Configure and generate code snippet for custom element",
   "keywords": [
+    "code-configurator",
+    "code-snippet",
+    "demo",
     "lit-element",
     "lit-html",
     "polymer",
+    "really",
     "really-code-configurator",
     "typescript",
     "web-components"

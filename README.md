@@ -176,7 +176,7 @@ _Coming soon_
 [vscode-url]: https://code.visualstudio.com
 [vscode-lit-html-url]: https://github.com/mjbvz/vscode-lit-html
 [web-component-tester-url]: https://github.com/Polymer/tools/tree/master/packages/web-component-tester
-[ReallyCodeConfigurator]: #really-code-configurator
+[ReallyCodeConfigurator]: /api-references.md#reallycodeconfigurator
 
 <!-- MDN -->
 [array-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -204,11 +204,11 @@ _Coming soon_
 [packagephobia-badge]: https://flat.badgen.net/packagephobia/install/@really/really-code-configurator
 [bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/@really/really-code-configurator
 
-[circleci-badge]: https://flat.badgen.net/circleci/github/@really/really-code-configurator?icon=circleci
-[daviddm-badge]: https://flat.badgen.net/david/dep/@really/really-code-configurator
+[circleci-badge]: https://flat.badgen.net/circleci/github/reallyland/really-code-configurator?icon=circleci
+[daviddm-badge]: https://flat.badgen.net/david/dep/reallyland/really-code-configurator
 
-[codebeat-badge]: https://codebeat.co/badges/123
-[codacy-badge]: https://api.codacy.com/project/badge/Grade/123
+[codebeat-badge]: https://codebeat.co/badges/b1dbfe72-c81a-423b-856f-d7ad5a7bb4c8
+[codacy-badge]: https://api.codacy.com/project/badge/Grade/56c2dfca027d4b9c9d92e850d68e08eb
 [coc-badge]: https://flat.badgen.net/badge/code%20of/conduct/pink
 
 <!-- Links -->
@@ -227,5 +227,5 @@ _Coming soon_
 [daviddm-url]: https://david-dm.org/@really/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
 
 [codebeat-url]: https://codebeat.co/projects/github-com-really-code-configurator-master
-[codacy-url]: https://www.codacy.com/app/@really/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator&amp;utm_campaign=Badge_Grade
+[codacy-url]: https://www.codacy.com/app/reallyland/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=reallyland/really-code-configurator&amp;utm_campaign=Badge_Grade
 [coc-url]: https://github.com/@really/really-code-configurator/blob/master/CODE_OF_CONDUCT.md
