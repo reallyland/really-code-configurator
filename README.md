@@ -59,7 +59,7 @@ $ npm install @reallyland/really-code-configurator
 **properties.config.ts**
 
 ```ts
-import { PropertyValue } from '../really-code-configurator';
+import { PropertyValue } from '@reallyland/really-code-configurator';
 
 const properties: PropertyValue[] = [
   {
@@ -194,7 +194,7 @@ _Coming soon_
 [tippin-me-badge]: https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@igarshmyb/F0918E
 [follow-me-badge]: https://flat.badgen.net/twitter/follow/igarshmyb?icon=twitter
 
-[version-badge]: https://flat.badgen.net/npm/v/@reallyland/really-code-configurator/next?icon=npm
+[version-badge]: https://flat.badgen.net/npm/v/@reallyland/really-code-configurator?icon=npm
 [lit-element-version-badge]: https://flat.badgen.net/npm/v/lit-element/latest?icon=npm&label=lit-element
 [node-version-badge]: https://flat.badgen.net/npm/node/@reallyland/really-code-configurator
 [mit-license-badge]: https://flat.badgen.net/npm/license/@reallyland/really-code-configurator
@@ -207,7 +207,7 @@ _Coming soon_
 [circleci-badge]: https://flat.badgen.net/circleci/github/reallyland/really-code-configurator?icon=circleci
 [daviddm-badge]: https://flat.badgen.net/david/dep/reallyland/really-code-configurator
 
-[codebeat-badge]: https://codebeat.co/badges/b1dbfe72-c81a-423b-856f-d7ad5a7bb4c8
+[codebeat-badge]: https://codebeat.co/badges/886f771f-87f8-48a8-b0cf-9aa2edf30dc9
 [codacy-badge]: https://api.codacy.com/project/badge/Grade/56c2dfca027d4b9c9d92e850d68e08eb
 [coc-badge]: https://flat.badgen.net/badge/code%20of/conduct/pink
 
@@ -217,15 +217,15 @@ _Coming soon_
 
 [version-url]: https://www.npmjs.com/package/@reallyland/really-code-configurator/v/next?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 [node-version-url]: https://nodejs.org/en/download?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
-[mit-license-url]: https://github.com/@reallyland/really-code-configurator/blob/master/LICENSE?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
+[mit-license-url]: https://github.com/reallyland/really-code-configurator/blob/master/LICENSE?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 
-[downloads-url]: https://www.npmtrends.com/really-code-configurator
-[packagephobia-url]: https://packagephobia.now.sh/result?p=really-code-configurator
-[bundlephobia-url]: https://bundlephobia.com/result?p=really-code-configurator
+[downloads-url]: https://www.npmtrends.com/@reallyland/really-code-configurator
+[packagephobia-url]: https://packagephobia.now.sh/result?p=%40reallyland%2Freally-code-configurator
+[bundlephobia-url]: https://bundlephobia.com/result?p=@reallyland/really-code-configurator
 
-[circleci-url]: https://circleci.com/gh/@reallyland/really-code-configurator/tree/master?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
-[daviddm-url]: https://david-dm.org/@reallyland/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
+[circleci-url]: https://circleci.com/gh/reallyland/really-code-configurator/tree/master?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
+[daviddm-url]: https://david-dm.org/reallyland/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 
-[codebeat-url]: https://codebeat.co/projects/github-com-really-code-configurator-master
+[codebeat-url]: https://codebeat.co/projects/github-com-reallyland-really-code-configurator-master-a97a5a48-afcd-4c3c-97d9-0909cfc2a5e1
 [codacy-url]: https://www.codacy.com/app/reallyland/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=reallyland/really-code-configurator&amp;utm_campaign=Badge_Grade
-[coc-url]: https://github.com/@reallyland/really-code-configurator/blob/master/CODE_OF_CONDUCT.md
+[coc-url]: https://github.com/reallyland/really-code-configurator/blob/master/code-of-conduct.md
