@@ -215,7 +215,7 @@ _Coming soon_
 [tippin-me-url]: https://tippin.me/@igarshmyb
 [follow-me-url]: https://twitter.com/igarshmyb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 
-[version-url]: https://www.npmjs.com/package/@reallyland/really-code-configurator/v/next?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
+[version-url]: https://www.npmjs.com/package/@reallyland/really-code-configurator/v/latest?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 [node-version-url]: https://nodejs.org/en/download?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 [mit-license-url]: https://github.com/reallyland/really-code-configurator/blob/master/LICENSE?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 
