@@ -1,5 +1,5 @@
 <div align="center" style="text-align: center;">
-  <h1 style="border-bottom: none;">@really/really-code-configurator</h1>
+  <h1 style="border-bottom: none;">@reallyland/really-code-configurator</h1>
 
   <p>Configure and generate code snippet for custom element</p>
 </div>
@@ -51,7 +51,7 @@
 
 ```sh
 # Install via NPM
-$ npm install @really/really-code-configurator
+$ npm install @reallyland/really-code-configurator
 ```
 
 ## Usage
@@ -115,7 +115,7 @@ export { properties, cssProperties };
   <head>
     <script type="module">
       import '/path/to/test-property.js';
-      import '/path/to/@really/really-code-configurator.js';
+      import '/path/to/@reallyland/really-code-configurator.js';
       import { properties, cssProperties } from '/path/to/properties.config.js';
 
       const configuratorEl = document.createElement('.configurator');
@@ -194,15 +194,15 @@ _Coming soon_
 [tippin-me-badge]: https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@igarshmyb/F0918E
 [follow-me-badge]: https://flat.badgen.net/twitter/follow/igarshmyb?icon=twitter
 
-[version-badge]: https://flat.badgen.net/npm/v/@really/really-code-configurator/next?icon=npm
+[version-badge]: https://flat.badgen.net/npm/v/@reallyland/really-code-configurator/next?icon=npm
 [lit-element-version-badge]: https://flat.badgen.net/npm/v/lit-element/latest?icon=npm&label=lit-element
-[node-version-badge]: https://flat.badgen.net/npm/node/@really/really-code-configurator
-[mit-license-badge]: https://flat.badgen.net/npm/license/@really/really-code-configurator
+[node-version-badge]: https://flat.badgen.net/npm/node/@reallyland/really-code-configurator
+[mit-license-badge]: https://flat.badgen.net/npm/license/@reallyland/really-code-configurator
 
-[downloads-badge]: https://flat.badgen.net/npm/dm/@really/really-code-configurator
-[total-downloads-badge]: https://flat.badgen.net/npm/dt/@really/really-code-configurator?label=total%20downloads
-[packagephobia-badge]: https://flat.badgen.net/packagephobia/install/@really/really-code-configurator
-[bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/@really/really-code-configurator
+[downloads-badge]: https://flat.badgen.net/npm/dm/@reallyland/really-code-configurator
+[total-downloads-badge]: https://flat.badgen.net/npm/dt/@reallyland/really-code-configurator?label=total%20downloads
+[packagephobia-badge]: https://flat.badgen.net/packagephobia/install/@reallyland/really-code-configurator
+[bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/@reallyland/really-code-configurator
 
 [circleci-badge]: https://flat.badgen.net/circleci/github/reallyland/really-code-configurator?icon=circleci
 [daviddm-badge]: https://flat.badgen.net/david/dep/reallyland/really-code-configurator
@@ -213,19 +213,19 @@ _Coming soon_
 
 <!-- Links -->
 [tippin-me-url]: https://tippin.me/@igarshmyb
-[follow-me-url]: https://twitter.com/igarshmyb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
+[follow-me-url]: https://twitter.com/igarshmyb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 
-[version-url]: https://www.npmjs.com/package/@really/really-code-configurator/v/next?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
-[node-version-url]: https://nodejs.org/en/download?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
-[mit-license-url]: https://github.com/@really/really-code-configurator/blob/master/LICENSE?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
+[version-url]: https://www.npmjs.com/package/@reallyland/really-code-configurator/v/next?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
+[node-version-url]: https://nodejs.org/en/download?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
+[mit-license-url]: https://github.com/@reallyland/really-code-configurator/blob/master/LICENSE?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 
 [downloads-url]: https://www.npmtrends.com/really-code-configurator
 [packagephobia-url]: https://packagephobia.now.sh/result?p=really-code-configurator
 [bundlephobia-url]: https://bundlephobia.com/result?p=really-code-configurator
 
-[circleci-url]: https://circleci.com/gh/@really/really-code-configurator/tree/master?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
-[daviddm-url]: https://david-dm.org/@really/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@really/really-code-configurator
+[circleci-url]: https://circleci.com/gh/@reallyland/really-code-configurator/tree/master?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
+[daviddm-url]: https://david-dm.org/@reallyland/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@reallyland/really-code-configurator
 
 [codebeat-url]: https://codebeat.co/projects/github-com-really-code-configurator-master
 [codacy-url]: https://www.codacy.com/app/reallyland/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=reallyland/really-code-configurator&amp;utm_campaign=Badge_Grade
-[coc-url]: https://github.com/@really/really-code-configurator/blob/master/CODE_OF_CONDUCT.md
+[coc-url]: https://github.com/@reallyland/really-code-configurator/blob/master/CODE_OF_CONDUCT.md
