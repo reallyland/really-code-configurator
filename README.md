@@ -176,6 +176,8 @@ _Coming soon_
 [vscode-url]: https://code.visualstudio.com
 [vscode-lit-html-url]: https://github.com/mjbvz/vscode-lit-html
 [web-component-tester-url]: https://github.com/Polymer/tools/tree/master/packages/web-component-tester
+[wre-url]: https://developers.google.com/search/docs/guides/rendering
+[wre-2019-url]: https://www.deepcrawl.com/blog/news/what-version-of-chrome-is-google-actually-using-for-rendering
 [ReallyCodeConfigurator]: /api-references.md#reallycodeconfigurator
 
 <!-- MDN -->
