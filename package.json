@@ -1,6 +1,6 @@
 {
   "name": "@reallyland/really-code-configurator",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Configure and generate code snippet for custom element",
   "keywords": [
     "code-configurator",
