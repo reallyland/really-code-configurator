@@ -123,8 +123,6 @@ export class ReallyCodeConfigurator extends LitElement {
     const cssProperties = this.cssProperties;
     const slottedElements = this._slottedElements;
 
-    console.log('slottedelements', slottedElements);
-
     if (notArray(slottedElements)) return;
 
     if (!notArray(properties)) {
@@ -148,13 +146,6 @@ export class ReallyCodeConfigurator extends LitElement {
     const elName = this.customElement;
     const properties = this.properties;
     const cssProperties = this.cssProperties;
-
-    console.log(
-      'render',
-      customElement,
-      properties,
-      cssProperties
-    );
 
     return html`
     <div>
@@ -185,12 +176,6 @@ export class ReallyCodeConfigurator extends LitElement {
 
       return p;
     }, [] as HTMLElement[]);
-
-    console.log(
-      'updateslotted',
-      assignedNodes,
-      matchedCustomElements
-    );
 
     const noNodes = notArray(matchedCustomElements);
 
