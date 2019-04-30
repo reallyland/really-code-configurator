@@ -10,9 +10,6 @@
         "chrome": [
           "disable-gpu",
           "headless"
-        ],
-        "firefox": [
-          "-headless"
         ]
       }
     }
