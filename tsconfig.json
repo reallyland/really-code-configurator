@@ -28,7 +28,10 @@
     "rootDir": "src",
     "outDir": "dist",
     "declaration": true,
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "types": [
+      "prismjs"
+    ]
   },
   "include": ["src/**/*.ts"]
 }
