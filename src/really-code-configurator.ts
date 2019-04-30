@@ -72,6 +72,11 @@ export class ReallyCodeConfigurator extends LitElement {
       display: block;
     }
 
+    input,
+    select {
+      margin: 0;
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -102,6 +107,23 @@ export class ReallyCodeConfigurator extends LitElement {
 
     .copy-text {
       margin: 0 0 0 8px;
+    }
+
+    @media screen and (max-width: 820px) {
+      .all-properties-container,
+      .configurator > label,
+      .all-code-snippets-container,
+      .code-container {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      label > div,
+      label > input,
+      label > select, {
+        max-width: calc(50% - 4px);
+        width: 100%;
+      }
     }
     `,
     prismVscode,
