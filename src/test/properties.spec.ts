@@ -2,12 +2,12 @@ import { ReallyCodeConfigurator } from '../really-code-configurator.js';
 
 import '../really-code-configurator.js';
 import { cssProperties, properties } from './properties.config.js';
-// import { getShadowInnerHTML } from './test-helpers';
+import { getTestName } from './test-helpers.js';
 
 const { strictEqual, deepStrictEqual, isTrue } = chai.assert;
 let el: ReallyCodeConfigurator;
 
-describe('really-clipboard-copy', () => {
+describe(getTestName('really-code-configurator'), () => {
   describe('properties', () => {
     const getAssignedNodes = (node: HTMLElement) => {
       const slotEl = node.shadowRoot!.querySelector('slot') as HTMLSlotElement;

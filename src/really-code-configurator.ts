@@ -342,4 +342,12 @@ declare global {
   interface Window {
     Prism: typeof import('prismjs');
   }
+
+  interface HTMLElementTagNameMap {
+    'really-code-configurator': ReallyCodeConfigurator;
+  }
+
+  interface HTMLElementEventMap {
+    'content-copied': CustomEvent<undefined>;
+  }
 }
