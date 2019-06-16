@@ -3,12 +3,15 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
     "inlineSources": true,
+    "listEmittedFiles": true,
     "newLine": "LF",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "removeComments": true,
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
@@ -28,7 +31,9 @@
     "rootDir": "src",
     "outDir": "dist",
     "declaration": true,
+    "declarationMap": true,
     "declarationDir": "dist"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["dist"]
 }
