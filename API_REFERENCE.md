@@ -41,7 +41,7 @@ _None_
 _None_
 
 <!-- References -->
-[PropertyValue]: /api-references.md#propertyvalue
+[PropertyValue]: /API_REFERENCE.md#propertyvalue
 
 <!-- MDN -->
 [Array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

@@ -31,13 +31,13 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Pre-requisites](#pre-requisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Browser compatibility](#browser-compatibility)
-- [API references](#api-references)
-- [Demo](#demo)
-- [License](#license)
+- [Pre-requisites](#Pre-requisites)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Browser compatibility](#Browser-compatibility)
+- [API Reference](#API-Reference)
+- [Demo](#Demo)
+- [License](#License)
 
 ## Pre-requisites
 
@@ -154,7 +154,7 @@ export { properties, cssProperties };
 | Firefox 62 (w/o native Shadow DOM) | macOS Mojave (10.14) |
 | Firefox 63 (native Shadow DOM support) | Windows 10 |
 
-## API references
+## API Reference
 
 - [ReallyCodeConfigurator][]
 
@@ -178,7 +178,7 @@ _Coming soon_
 [web-component-tester-url]: https://github.com/Polymer/tools/tree/master/packages/web-component-tester
 [wre-url]: https://developers.google.com/search/docs/guides/rendering
 [wre-2019-url]: https://www.deepcrawl.com/blog/news/what-version-of-chrome-is-google-actually-using-for-rendering
-[ReallyCodeConfigurator]: /api-references.md#reallycodeconfigurator
+[ReallyCodeConfigurator]: /API_REFERENCE.md#reallycodeconfigurator
 
 <!-- MDN -->
 [array-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -230,4 +230,4 @@ _Coming soon_
 
 [codebeat-url]: https://codebeat.co/projects/github-com-reallyland-really-code-configurator-master-a97a5a48-afcd-4c3c-97d9-0909cfc2a5e1
 [codacy-url]: https://www.codacy.com/app/reallyland/really-code-configurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=reallyland/really-code-configurator&amp;utm_campaign=Badge_Grade
-[coc-url]: https://github.com/reallyland/really-code-configurator/blob/master/code-of-conduct.md
+[coc-url]: https://github.com/reallyland/really-code-configurator/blob/master/CODE_OF_CONDUCT.md

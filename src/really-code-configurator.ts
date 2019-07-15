@@ -118,10 +118,14 @@ export class ReallyCodeConfigurator extends LitElement {
         width: 100%;
       }
 
+      .all-properties-container {
+        flex-direction: column;
+      }
+
       label > div,
       label > input,
-      label > select, {
-        max-width: calc(50% - 4px);
+      label > select {
+        max-width: calc(50% - 8px);
         width: 100%;
       }
     }
