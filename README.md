@@ -144,15 +144,13 @@ export { properties, cssProperties };
 
 | Name | OS |
 | --- | --- |
-| Internet Explorer 11 | Windows 7 |
-| Edge 13 | Windows 10 |
 | Edge 17 | Windows 10 |
-| Safari 9 | Mac OS X 10.11 |
+| Edge 15 | Windows 10 |
+| Internet Explorer 11 | Windows 10 |
 | Safari 10.1 | Mac OS 10.12 |
-| Chrome 41 ([WRE][wre-url]) | Linux |
-| Chrome 69 ([WRE 2019][wre-2019-url]) | Windows 10 |
+| Safari 9 | Mac OS X 10.11 |
 | Firefox 62 (w/o native Shadow DOM) | macOS Mojave (10.14) |
-| Firefox 63 (native Shadow DOM support) | Windows 10 |
+| Chrome 69 ([WRE 2019][wre-2019-url]) | Windows 10 |
 
 ## API Reference
 
@@ -176,7 +174,6 @@ _Coming soon_
 [vscode-url]: https://code.visualstudio.com
 [vscode-lit-html-url]: https://github.com/mjbvz/vscode-lit-html
 [web-component-tester-url]: https://github.com/Polymer/tools/tree/master/packages/web-component-tester
-[wre-url]: https://developers.google.com/search/docs/guides/rendering
 [wre-2019-url]: https://www.deepcrawl.com/blog/news/what-version-of-chrome-is-google-actually-using-for-rendering
 [ReallyCodeConfigurator]: /API_REFERENCE.md#reallycodeconfigurator
 
