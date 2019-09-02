@@ -47,22 +47,22 @@
     "watch": "npm run ts -- --watch"
   },
   "dependencies": {
-    "@material/mwc-button": "^0.6.0",
+    "@material/mwc-button": "^0.7.1",
     "@types/prismjs": "^1.16.0",
-    "lit-element": "^2.2.0",
-    "lit-html": "^1.1.1",
-    "prismjs": "^1.16.0"
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2",
+    "prismjs": "^1.17.1"
   },
   "devDependencies": {
     "@reallyland/tsconfig": "^1.0.0",
     "@reallyland/tslint-config": "^1.1.1",
-    "@types/chai": "^4.1.7",
+    "@types/chai": "^4.2.0",
     "@types/mocha": "^5.2.7",
     "@webcomponents/webcomponentsjs": "^2.2.7",
     "chai": "^4.2.0",
-    "mocha": "^6.1.4",
-    "tslint": "^5.18.0",
-    "typescript": "^3.5.3",
+    "mocha": "^6.2.0",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.2",
     "wct-mocha": "^1.0.1"
   },
   "engines": {
